@@ -1,4 +1,4 @@
-def call(Srting giturl, String gitBranch) {
+def call(String giturl, String gitBranch) {
     checkout([
         $class: 'GitSCM',
         branches: [[name: gitBranch]],
